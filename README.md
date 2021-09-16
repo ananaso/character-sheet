@@ -45,7 +45,6 @@ The installation options below are ordered from least configurable to most confi
 
 - Run `scripts/setup.sh` after modifying the .env.example file in the first steps of the Docker and Source Code instructions.
 
-
 ### Heroku
 
 1. To use the application hosted on Heroku, please click or paste the following URL in your browser: **URL here**.
@@ -107,79 +106,14 @@ port for the client is accessed in the code by referencing
 
 ### Client
 
-| Module/Library    | Environment | Description                                        |
-| :---------------- | :---------- | :------------------------------------------------- |
-| pg                | Runtime     | PostgreSQL client                                  |
-| react             | Runtime     | UI Library                                         |
-| react-dom         | Runtime     | DOM renderer for React                             |
-| react-scripts     | Runtime     | Scripts and configuration used by Create React App |
-| dotenv            | Runtime     | .env file reader                                   |
-| js-cookie         | Runtime     | Cookies                                            |
-
-### Server
-
-| Module/Library | Environment | Description         |
-| :------------- | :---------- | :------------------ |
-| debug          | Development | Debug utility       |
-| nodemon        | Development | Live server updates |
-| express        | Runtime     | Web framework       |
-| http-errors    | Runtime     | Http error creation |
-| morgan         | Runtime     | Logger              |
-| jade           | Runtime     | Template engine     |
-| cookie-parser  | Runtime     | Cookie middleware   |
-| cors           | Runtime     | CORS middleware     |
-| dotenv         | Runtime     | .env file reader    |
-| pg             | Runtime     | Postgres client     |
-
-## License
-
-This software is licensed under the [MIT](./LICENSE) license. Go to the server folder and execute `npm install`
-
-5. (OPTIONAL) If you change the seeds or migrations, or the database becomes corrupted, you can run `npm run db:reset` in the server folder to run the migrations and seeds again.
-
-6. Go to the client and execute `npm run dev` to start the React app.
-
-7. Go to the server and execute `npm run dev` to start the Express server.
-
-8. Proceed to the address and port for the client as specified in your .env file (e.g. http://localhost:3000)
-
-### Environment Variables
-
-Environment variables that control the operation of the app are defined in the
-`.env` file in the application root. These variables and their usage are shown
-in the following table.
-
-Environment variables maintained in the `.env` file are made available to the
-application code via `process.env.<variable-name>`. For example, the
-port for the client is accessed in the code by referencing
-`process.env.PORT`.
-
-| Environment Variable | Description                              | Example Setting                  | Applicability    |
-| :------------------- | :--------------------------------------- | :------------------------------- | :--------------- |
-| PORT                 | Local and/or container port for client   | 3000                             | server, client   |
-| HOST_DEV             | Local and/or container host for server   | localhost                        | server, client   |
-| HOST_LIVE            | Deployed host for server                 | shop-till-you-drop.herokuapp.com | server, client   |
-| HOST_DB              | Docker host for database                 | postgres                         | server           |
-| PROTO_DEV            | Local and/or container protocol          | http                             | server. client   |
-| PROTO_LIVE           | Deployed protocol                        | https                            | server, client   |
-| API_PORT             | Local and/or container port API server   | 3001                             | server, client   |
-| POSTGRES_DB          | Database name                            | shop-till-you-drop               | server, database |
-| POSTGRES_USER        | PostgreSQL username                      | postgres                         | server, database |
-| POSTGRES_PASSWORD    | PostgreSQL password                      | docker                           | server, database |
-| PG_PORT              | Local and/or container port for database | 5432                             | server, database |
-
-## Libraries
-
-### Client
-
-| Module/Library    | Environment | Description                                        |
-| :---------------- | :---------- | :------------------------------------------------- |
-| pg                | Runtime     | PostgreSQL client                                  |
-| react             | Runtime     | UI Library                                         |
-| react-dom         | Runtime     | DOM renderer for React                             |
-| react-scripts     | Runtime     | Scripts and configuration used by Create React App |
-| dotenv            | Runtime     | .env file reader                                   |
-| js-cookie         | Runtime     | Cookies                                            |
+| Module/Library | Environment | Description                                        |
+| :------------- | :---------- | :------------------------------------------------- |
+| pg             | Runtime     | PostgreSQL client                                  |
+| react          | Runtime     | UI Library                                         |
+| react-dom      | Runtime     | DOM renderer for React                             |
+| react-scripts  | Runtime     | Scripts and configuration used by Create React App |
+| dotenv         | Runtime     | .env file reader                                   |
+| js-cookie      | Runtime     | Cookies                                            |
 
 ### Server
 
